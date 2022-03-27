@@ -1,0 +1,31 @@
+package com.greatlearning.admin;
+
+import com.greatelearning.superdepartment.SuperDepartment;
+
+public class Admin extends SuperDepartment {
+
+	private String departmentName() {
+
+		return "Welcome to Admin Department";
+	}
+
+	private String getTodaysWork() {
+
+		return "Complete your documents Submission";
+
+	}
+
+	private String getWorkDeadline() {
+
+		return "Complete by EOD";
+	}
+
+	public void showfunctionality() {
+		System.out.println(departmentName());
+		System.out.println(getTodaysWork());
+		System.out.println(getWorkDeadline());
+		System.out.println(super.isTodayAHoliday());
+
+	}
+
+}
